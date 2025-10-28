@@ -1,0 +1,12 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "\"1C:Enterprise.Element\" Debugger",
+			"type": "xbsl",
+			"request": "attach",
+			"stopOnEntry": false,
+			"endSessionIfClientDisconnected": true
+		}
+	]
+}
