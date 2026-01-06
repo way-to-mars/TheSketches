@@ -1,7 +1,10 @@
 ВидЭлемента: КомпонентИнтерфейса
-ОбластьВидимости: ВПодсистеме
 Ид: cfbb422d-4b76-4e31-aa36-1295d65a5f01
 Имя: ГлавнаяСтраница
+ОбластьВидимости: ВПодсистеме
+Импорт:
+    - uc1_КлассическиеЗадачи
+    - КонкатенацияUrl
 Наследует:
     Тип: Форма
     ВключатьВАвтоИнтерфейс: Ложь
@@ -14,51 +17,71 @@
             Содержимое:
                 -
                     Тип: КарточкаПиложения
-                    ИмяПриложения: "Приложение #01"
-                    Описание: Краткое описание приложения. Его назначение и ключевые особенности. Краткое описание приложения. Его назначение и ключевые особенности. Краткое описание приложения. Его назначение и ключевые особенности. Краткое описание приложения. Его назначение и ключевые особенности.
-                    Ссылка: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
+                    ИмяПриложения: Регистры накоплений
+                    Описание: Приложение "Регистры Накоплений" по учебному курсу. Раздел "Классические задачи"
+                    Ссылка:
+                        Тип: Тип<КлиентскоеПриложение>
+                        Значение: ПриложениеРегистрыНакоплений
                 -
                     Тип: КарточкаПиложения
-                    ИмяПриложения: "Приложение #02"
+                    ИмяПриложения: Конкатенация URL
+                    Описание: Форма, склеивающая из двух либо трех фрагментов одну строку url
+                    Ссылка:
+                        Тип: Тип<КлиентскоеПриложение>
+                        Значение: ПриложениеUrl
+                -
+                    Тип: КарточкаПиложения
+                    ИмяПриложения: Приложение #03
                     Описание: Краткое описание приложения. Его назначение и ключевые особенности.
-                    Ссылка: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
+                    Ссылка:
+                        Тип: Строка
+                        Значение: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
                 -
                     Тип: КарточкаПиложения
-                    ИмяПриложения: "Приложение #03"
+                    ИмяПриложения: Приложение #04
                     Описание: Краткое описание приложения. Его назначение и ключевые особенности.
-                    Ссылка: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
+                    Ссылка:
+                        Тип: Строка
+                        Значение: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
                 -
                     Тип: КарточкаПиложения
-                    ИмяПриложения: "Приложение #04"
+                    ИмяПриложения: Приложение #05
                     Описание: Краткое описание приложения. Его назначение и ключевые особенности.
-                    Ссылка: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
+                    Ссылка:
+                        Тип: Строка
+                        Значение: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
                 -
                     Тип: КарточкаПиложения
-                    ИмяПриложения: "Приложение #05"
-                    Описание: Краткое описание приложения. Его назначение и ключевые особенности.
-                    Ссылка: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
-                -
-                    Тип: КарточкаПиложения
-                    ИмяПриложения: "Приложение #06"
+                    ИмяПриложения: Приложение #06
                     Описание: Краткое описание приложения. Его назначение и ключевые особенности.Краткое описание приложения. Его назначение и ключевые особенности.Краткое описание приложения. Его назначение и ключевые особенности.
-                    Ссылка: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
+                    Ссылка:
+                        Тип: Строка
+                        Значение: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
                 -
                     Тип: КарточкаПиложения
-                    ИмяПриложения: "Приложение #07"
+                    ИмяПриложения: Приложение #07
                     Описание: Краткое описание приложения. Его назначение и ключевые особенности.
-                    Ссылка: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
+                    Ссылка:
+                        Тип: Строка
+                        Значение: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
                 -
                     Тип: КарточкаПиложения
-                    ИмяПриложения: "Приложение #08"
+                    ИмяПриложения: Приложение #08
                     Описание: Краткое описание приложения. Его назначение и ключевые особенности.
-                    Ссылка: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
+                    Ссылка:
+                        Тип: Строка
+                        Значение: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
                 -
                     Тип: КарточкаПиложения
-                    ИмяПриложения: "Приложение #09"
+                    ИмяПриложения: Приложение #09
                     Описание: Краткое описание приложения. Его назначение и ключевые особенности.
-                    Ссылка: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
+                    Ссылка:
+                        Тип: Строка
+                        Значение: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
                 -
                     Тип: КарточкаПиложения
-                    ИмяПриложения: "Приложение #10"
+                    ИмяПриложения: Приложение #10
                     Описание: Краткое описание приложения. Его назначение и ключевые особенности.
-                    Ссылка: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
+                    Ссылка:
+                        Тип: Строка
+                        Значение: https://1cmycloud.com/console/help/element/8.0/docs/stdlib/element/Std/Interface/NavigationLink_ru/
