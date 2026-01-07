@@ -1,0 +1,35 @@
+Строки:
+    НадписьЗаголовокРегистрация: Create Account
+    ПолеИмейлЗаголовок: Email
+    ПолеИмейлОписание: Used as your login credential
+    ПолеПарольЗаголовок: Password
+    ПолеПарольОписание: Minimum 8 characters
+    ПолеИмяЗаголовок: First name
+    ПолеФамилияЗаголовок: Last name
+    ПолеДатаРожденияЗаголовок: Date of Birth
+    ПолеДатаРожденияОписание: Required for age-restricted content
+    НадписьСогласие: I agree to the Terms of Service and Privacy Policy
+    КнопкаСоздать: Create Account
+    ЯзыкНазвание: En
+    ОшибкаИмейлПустой: Please enter your email address
+    ОшибкаИмейлФормат: Invalid email format (e.g. name@example.com)
+    ОшибкаПарольПустой: Please enter your password
+    ОшибкаПарольКороткий: Password is too short. Minimum length is 8 characters
+    ОшибкаИмяПустое: Please enter your first name
+    ОшибкаФамилияПустая: Please enter your last name
+    ОшибкаДатаРожденияПустая: Please enter your date of birth
+    ОшибкаДатаРожденияБудущее: Date of birth cannot be in the future
+    ОшибкаНетСогласия: You must accept the Terms of Service to create an account
+    ОшибкаРегистрации: Registration could not be completed. Please try again
+    ПодтверждениеЗаголовок: Email verification
+    ПодтверждениеНадпись1: "We’ve sent a verification code to:"
+    ПодтверждениеНадпись2: Enter the code from the email to finish signing up
+    ПодтверждениеНадпись3: Verification code
+    ПодтверждениеНадпись4: Verify
+    ПодтверждениеНадпись5: Didn’t get the email?
+    ПодтверждениеНадпись6: Resend code
+    ПодтверждениеНадпись7: Wrong email address?
+    ПодтверждениеНадпись8: Change email
+    ПодтверждениеОшибкаПустойКод: Please enter verification code
+    ПодтверждениеОшибкаНеверныйКод: "Incorrect code. Remaining attempts: "
+    ПодтверждениеОшибкаПопыткиЗакончились: You’ve reached the maximum number of attempts. Please request a new code or try again later

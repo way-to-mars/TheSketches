@@ -1,0 +1,324 @@
+@Обработчик
+метод ПриОткрытииПоСсылке(Событие: СобытиеПриОткрытииПоСсылке)
+    Язык = Событие.Ссылка?.Параметры?.ПолучитьПервый("lang") ?? "ru"
+;
+
+метод КодHtml(): Строка
+  возврат
+    "<!DOCTYPE html>
+    <html lang=\"%{Язык}\">
+
+    <head>
+        <meta charset=\"UTF-8\">
+        <title id=\"page-title\">Пользовательское соглашение — Соцсеть книжного клуба BcluB</title>
+    </head>
+
+    <body>
+        <div style=\"display:flex; gap:8px; justify-content:flex-end; margin:8px 0 16px;\">
+            <button type=\"button\" onclick=\"setLanguage('ru')\">Русский</button>
+            <button type=\"button\" onclick=\"setLanguage('en')\">English</button>
+        </div>
+
+        <!-- здесь русский текст -->
+        <div id=\"lang-ru\">
+            <h1>ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</h1>
+
+            <h2>1. Общие положения</h2>
+            <p>1.1. Настоящее Пользовательское соглашение (далее — «Соглашение») регулирует отношения между владельцем
+                сервиса
+                «Соцсеть книжного клуба BcluB» (далее — «Администрация», «Сервис») и любым лицом, которое пользуется
+                Сервисом
+                или прошло регистрацию (далее — «Пользователь»).</p>
+            <p>1.2. Используя Сервис, Пользователь подтверждает, что ознакомился с текстом Соглашения, понимает его и
+                безоговорочно принимает все условия.</p>
+            <p>1.3. Соглашение является публичной офертой в понимании ст. 435 и 437 ГК РФ; акцептом считается регистрация
+                или
+                фактическое использование Сервиса.</p>
+
+            <h2>2. Регистрация и аккаунт</h2>
+            <p>2.1. Для доступа к персонализированному функционалу Пользователь проходит регистрацию, указывая действующий
+                адрес
+                электронной почты, пароль, имя, фамилию и дату рождения.</p>
+            <p>2.2. Указанный email используется:</p>
+            <ul>
+                <li>как логин для дальнейшего входа;</li>
+                <li>для отправки кода подтверждения и служебных уведомлений.</li>
+            </ul>
+            <p>2.3. Пользователь обязуется указывать достоверные данные и поддерживать их в актуальном состоянии.</p>
+            <p>2.4. Доступ к аккаунту осуществляется по email и паролю; Пользователь несёт ответственность за сохранность
+                этих
+                данных и все действия, совершённые в его аккаунте.</p>
+
+            <h2>3. Подтверждение электронной почты</h2>
+            <p>3.1. После регистрации на указанный адрес email отправляется код (или ссылка) подтверждения.</p>
+            <p>3.2. До подтверждения email доступ к части функционала может быть ограничен по усмотрению Администрации.</p>
+            <p>3.3. В случае невозможности доставки писем (ошибка адреса, блокировка) Администрация вправе приостановить или
+                ограничить доступ к аккаунту.</p>
+
+            <h2>4. Возраст и доступ к материалам</h2>
+            <p>4.1. Дата рождения используется для определения возможности доступа к материалам с возрастными ограничениями
+                (например, 18+).</p>
+            <p>4.2. Пользователь гарантирует, что указывает свою реальную дату рождения.</p>
+            <p>4.3. Администрация вправе:</p>
+            <ul>
+                <li>ограничивать доступ к отдельным материалам для пользователей младше установленного возраста;</li>
+                <li>запрашивать дополнительное подтверждение возраста в спорных случаях.</li>
+            </ul>
+
+            <h2>5. Обработка персональных данных</h2>
+            <p>5.1. При регистрации и использовании Сервиса обрабатываются следующие персональные данные: имя, фамилия,
+                email,
+                дата рождения, а также технические данные (IP‑адрес, cookie и т.п.).</p>
+            <p>5.2. Обработка персональных данных осуществляется в целях:</p>
+            <ul>
+                <li>регистрации и ведения аккаунта;</li>
+                <li>отправки кодов подтверждения и уведомлений;</li>
+                <li>предоставления доступа к функционалу Сервиса, в том числе возрастным ограничениям;</li>
+                <li>улучшения работы Сервиса и защиты от злоупотреблений.</li>
+            </ul>
+            <p>5.3. Подробный порядок обработки персональных данных определён в Политике конфиденциальности, размещённой по
+                адресу:
+                <a href=\"https://online.1c.ru/privacy_policy/\">https://online.1c.ru/privacy_policy/</a>.
+            </p>
+            <p>5.4. Регистрируясь, Пользователь выражает согласие на обработку персональных данных в указанных целях и
+                вправе
+                отозвать его в порядке, предусмотренном Политикой.</p>
+
+            <h2>6. Права и обязанности Пользователя</h2>
+            <p>6.1. Пользователь обязуется:</p>
+            <ul>
+                <li>соблюдать настоящее Соглашение и действующее законодательство РФ;</li>
+                <li>не передавать свои учетные данные третьим лицам;</li>
+                <li>не размещать контент, нарушающий права третьих лиц, законодательство РФ, нормы морали (порнография,
+                    экстремизм, призывы к насилию и т.п.);</li>
+                <li>не предпринимать действий, направленных на нарушение работоспособности Сервиса.</li>
+            </ul>
+            <p>6.2. Пользователь имеет право:</p>
+            <ul>
+                <li>использовать Сервис в пределах его функциональности;</li>
+                <li>редактировать данные своего профиля;</li>
+                <li>запросить удаление аккаунта и связанных с ним данных в порядке, установленном Политикой
+                    конфиденциальности.
+                </li>
+            </ul>
+
+            <h2>7. Права и обязанности Администрации</h2>
+            <p>7.1. Администрация вправе:</p>
+            <ul>
+                <li>изменять функционал Сервиса, интерфейс, структуру размещения материалов;</li>
+                <li>блокировать или удалять аккаунт Пользователя при нарушении Соглашения или законодательства РФ;</li>
+                <li>удалять или ограничивать доступ к контенту, который нарушает настоящее Соглашение или по её мнению
+                    является
+                    нежелательным.</li>
+            </ul>
+            <p>7.2. Администрация обязуется:</p>
+            <ul>
+                <li>обеспечивать конфиденциальность персональных данных в объёме, установленном законодательством и
+                    Политикой
+                    конфиденциальности;</li>
+                <li>принимать разумные меры по обеспечению устойчивой работы Сервиса.</li>
+            </ul>
+
+            <h2>8. Ограничение ответственности</h2>
+            <p>8.1. Сервис предоставляется по принципу «как есть» («as is»); Администрация не гарантирует отсутствие ошибок,
+                перерывов в работе и соответствие Сервиса ожиданиям Пользователя.</p>
+            <p>8.2. Администрация не несёт ответственности за:</p>
+            <ul>
+                <li>действия других пользователей;</li>
+                <li>невозможность использования Сервиса по причинам, зависящим от Пользователя, операторов связи или третьих
+                    лиц;</li>
+                <li>любой прямой или косвенный ущерб, возникший в результате использования или невозможности использования
+                    Сервиса.</li>
+            </ul>
+
+            <h2>9. Интеллектуальная собственность</h2>
+            <p>9.1. Исключительные права на Сервис, его дизайн, программный код, логотипы и иные объекты принадлежат
+                Администрации и/или правообладателям.</p>
+            <p>9.2. Пользователь получает ограниченную неисключительную лицензию на использование Сервиса исключительно в
+                личных
+                некоммерческих целях.</p>
+
+            <h2>10. Изменение Соглашения</h2>
+            <p>10.1. Администрация вправе в одностороннем порядке изменять условия Соглашения, публикуя новую редакцию по
+                адресу:
+                <a href=\"https://домен-книжного-клуба/terms\">https://домен-книжного-клуба/terms</a>.
+            </p>
+            <p>10.2. Изменения вступают в силу с момента публикации, если иное не указано в тексте. Продолжение
+                использования
+                Сервиса после изменения условий означает согласие Пользователя с новой редакцией.</p>
+
+            <h2>11. Порядок разрешения споров</h2>
+            <p>11.1. До обращения в суд стороны обязуются соблюдать претензионный порядок: направить письменную претензию с
+                описанием нарушения и контактными данными.</p>
+            <p>11.2. Администрация рассматривает претензию в течение 30 календарных дней.</p>
+            <p>11.3. При недостижении соглашения спор подлежит рассмотрению в суде по месту нахождения Администрации в
+                соответствии с законодательством РФ.</p>
+
+            <h2>12. Заключительные положения</h2>
+            <p>12.1. Настоящее Соглашение вступает в силу с момента регистрации Пользователя или фактического использования
+                Сервиса и действует до удаления аккаунта.</p>
+            <p>12.2. Если какое‑либо положение Соглашения признаётся недействительным, остальные положения остаются в силе.
+            </p>
+        </div>
+
+        <!-- здесь английский текст -->
+        <div id=\"lang-en\" style=\"display:none;\">
+            <h1>TERMS OF SERVICE</h1>
+
+            <h2>1. General Provisions</h2>
+            <p>1.1. These Terms of Service (hereinafter referred to as the “Terms”) govern the relationship between the
+                owner of the “BcluB Book Club Social Network” service (hereinafter referred to as the “Administration”,
+                the “Service”) and any person who uses the Service or has completed registration (hereinafter referred
+                to as the “User”).</p>
+            <p>1.2. By using the Service, the User confirms that they have read these Terms, understand them and
+                unconditionally accept all of their provisions.</p>
+            <p>1.3. The Terms constitute a public offer; registration or actual use of the Service shall be deemed full
+                acceptance of this offer.</p>
+
+            <h2>2. Registration and Account</h2>
+            <p>2.1. To access personalized functionality, the User must register by providing a valid email address,
+                password, first name, last name and date of birth.</p>
+            <p>2.2. The specified email address is used to:</p>
+            <ul>
+                <li>serve as the login for subsequent access to the Service;</li>
+                <li>send verification codes and service notifications.</li>
+            </ul>
+            <p>2.3. The User undertakes to provide accurate information and keep it up to date.</p>
+            <p>2.4. Access to the account is carried out using the email address and password; the User is responsible
+                for keeping these credentials confidential and for all actions performed under their account.</p>
+
+            <h2>3. Email Verification</h2>
+            <p>3.1. After registration, a verification code (or a verification link) is sent to the email address
+                provided by the User.</p>
+            <p>3.2. Until the email address is verified, access to certain features of the Service may be restricted at
+                the discretion of the Administration.</p>
+            <p>3.3. If emails cannot be delivered (due to an invalid address, blocking, etc.), the Administration may
+                suspend or limit access to the account.</p>
+
+            <h2>4. Age and Access to Content</h2>
+            <p>4.1. The date of birth is used to determine whether the User may access content with age restrictions
+                (for example, 18+ content).</p>
+            <p>4.2. The User guarantees that they provide their real date of birth.</p>
+            <p>4.3. The Administration may:</p>
+            <ul>
+                <li>restrict access to specific materials for Users below the required age;</li>
+                <li>request additional age verification in disputed cases.</li>
+            </ul>
+
+            <h2>5. Processing of Personal Data</h2>
+            <p>5.1. When registering and using the Service, the following personal data are processed: first name, last
+                name, email address, date of birth, as well as technical data (IP address, cookies, etc.).</p>
+            <p>5.2. Personal data are processed for the following purposes:</p>
+            <ul>
+                <li>creating and maintaining the User’s account;</li>
+                <li>sending verification codes and notifications;</li>
+                <li>providing access to the Service’s functionality, including age-restricted content;</li>
+                <li>improving the Service and protecting it against abuse.</li>
+            </ul>
+            <p>5.3. Details of personal data processing are set out in the Privacy Policy available at:
+                <a href=\"https://online.1c.ru/privacy_policy/\">https://online.1c.ru/privacy_policy/</a>.
+            </p>
+            <p>5.4. By registering, the User consents to the processing of their personal data for the purposes
+                specified above and may withdraw this consent in the manner provided for in the Privacy Policy.</p>
+
+            <h2>6. User Rights and Obligations</h2>
+            <p>6.1. The User undertakes to:</p>
+            <ul>
+                <li>comply with these Terms and applicable law;</li>
+                <li>not disclose their login credentials to any third parties;</li>
+                <li>not post any content that violates the rights of third parties, applicable law or moral standards
+                    (including pornography, extremism, incitement to violence, etc.);</li>
+                <li>refrain from any actions aimed at disrupting the proper functioning of the Service.</li>
+            </ul>
+            <p>6.2. The User has the right to:</p>
+            <ul>
+                <li>use the Service within its functionality;</li>
+                <li>edit their profile information;</li>
+                <li>request deletion of their account and related data in accordance with the procedure set out in the
+                    Privacy Policy.</li>
+            </ul>
+
+            <h2>7. Rights and Obligations of the Administration</h2>
+            <p>7.1. The Administration may:</p>
+            <ul>
+                <li>modify the functionality, interface and structure of the Service and its content;</li>
+                <li>block or delete a User’s account in case of a breach of these Terms or applicable law;</li>
+                <li>remove or restrict access to any content that violates these Terms or is deemed undesirable by the
+                    Administration.</li>
+            </ul>
+            <p>7.2. The Administration undertakes to:</p>
+            <ul>
+                <li>ensure the confidentiality of personal data to the extent required by law and the Privacy Policy;
+                </li>
+                <li>take reasonable measures to ensure the stable operation of the Service.</li>
+            </ul>
+
+            <h2>8. Limitation of Liability</h2>
+            <p>8.1. The Service is provided on an “as is” basis; the Administration does not warrant that the Service
+                will be error-free, uninterrupted or that it will meet the User’s expectations.</p>
+            <p>8.2. The Administration is not liable for:</p>
+            <ul>
+                <li>actions of other users;</li>
+                <li>the inability to use the Service for reasons attributable to the User, communication providers or
+                    third parties;</li>
+                <li>any direct or indirect damage arising from the use of or inability to use the Service.</li>
+            </ul>
+
+            <h2>9. Intellectual Property</h2>
+            <p>9.1. Exclusive rights to the Service, its design, source code, logos and other objects belong to the
+                Administration and/or respective right holders.</p>
+            <p>9.2. The User is granted a limited, non‑exclusive, non‑transferable license to use the Service for
+                personal, non‑commercial purposes only.</p>
+
+            <h2>10. Amendments to the Terms</h2>
+            <p>10.1. The Administration may unilaterally amend these Terms by publishing an updated version at:
+                <a href=\"https://домен-книжного-клуба/terms\">https://домен-книжного-клуба/terms</a>.
+            </p>
+            <p>10.2. Amendments take effect from the moment of publication, unless otherwise stated. Continued use of
+                the Service after the amendments take effect constitutes the User’s acceptance of the updated Terms.</p>
+
+            <h2>11. Dispute Resolution</h2>
+            <p>11.1. Before filing a claim with a court, the parties shall observe a mandatory pre‑trial (claim)
+                procedure by sending a written claim describing the alleged violation and providing contact details.</p>
+            <p>11.2. The Administration reviews the claim within 30 calendar days.</p>
+            <p>11.3. If the dispute cannot be resolved amicably, it shall be referred to a court at the location of the
+                Administration, in accordance with applicable law.</p>
+
+            <h2>12. Final Provisions</h2>
+            <p>12.1. These Terms enter into force at the moment the User registers or actually starts using the Service
+                and remain in effect until the User’s account is deleted.</p>
+            <p>12.2. If any provision of these Terms is held invalid, the remaining provisions shall continue in full
+                force and effect.</p>
+        </div>
+
+        <script>
+            function setLanguage(lang) {
+                document.getElementById('lang-ru').style.display = (lang === 'ru') ? 'block' : 'none';
+                document.getElementById('lang-en').style.display = (lang === 'en') ? 'block' : 'none';
+                document.getElementById('page-title').textContent = (lang === 'ru')
+                    ? 'Пользовательское соглашение — Соцсеть книжного клуба BcluB'
+                    : 'Terms of Service — BcluB Book Club Social Network';
+            }
+
+            (function initLanguage() {
+                const params = new URLSearchParams(window.location.search);
+                const fromQuery = params.get('lang');
+
+                // код языка по ISO 639‑1
+                if (fromQuery === 'ru' || fromQuery === 'en') {
+                    setLanguage(fromQuery);
+                    return;
+                }
+
+                const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+                // ru, ru-RU → ru; иначе en
+                const langToSet = browserLang.startsWith('ru') ? 'ru' : 'en';
+                setLanguage(langToSet);
+            })();
+        </script>
+
+    </body>
+
+    </html>
+    "
+;
