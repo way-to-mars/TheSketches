@@ -7,6 +7,14 @@
 			"request": "attach",
 			"stopOnEntry": false,
 			"endSessionIfClientDisconnected": true
+		},
+		{
+			"type": "xbsl",
+			"request": "attach",
+			"name": "Debug 'ПриложениеРегистрацияНовогоПользователя'",
+			"stopOnEntry": false,
+			"endSessionIfClientDisconnected": true,
+			"clientApplicationPath": "register"
 		}
 	]
 }
