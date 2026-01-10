@@ -33,3 +33,5 @@
     ПодтверждениеОшибкаПустойКод: Please enter verification code
     ПодтверждениеОшибкаНеверныйКод: "Incorrect code. Remaining attempts: "
     ПодтверждениеОшибкаПопыткиЗакончились: You’ve reached the maximum number of attempts. Please request a new code or try again later
+    ПодтверждениеОшибкаТаймаут: Resending the code will be available in {seconds} seconds
+    ПодтверждениеПовтор: New verification code sent to your email
